@@ -9,11 +9,11 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 </head>
-<body class="<%= @coverimage_class ? 'coverimage' : ''%>"
-  <div class="logo">
+<body class="<%= @coverimage_class ? 'coverimage' : ''%> debug"
+  <div class="logo debug">
     <img src="assets/mer-logo.png">
   </div>
-  <nav>
+  <nav class="debug">
     <ul>
       <li><a href='/welcome/contact'>Contact</a></li>
       <li><a href='/welcome/resume'>Resume</a></li>
@@ -24,10 +24,11 @@
     </ul>
   </nav>
 
-  <div class="container">
+  <div class="content debug">
 
             <%= yield %>
   </div>
+
   <div class="footer">
   </div>
 </body>
