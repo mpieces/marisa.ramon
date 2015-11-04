@@ -1,0 +1,224 @@
+/*  12 COLUMN : RESPONSIVE GRID SYSTEM
+  DEVELOPER : DENIS LEBLANC
+  URL : http://responsive.gs
+  VERSION : 3.0
+  LICENSE : GPL & MIT */
+
+/*  SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/*.debug {
+  border: 1px solid red;
+}*/
+
+
+
+body {
+/*  max-height: 1400px;
+  max-width: 960px;*/
+}
+
+/*body.gradient {
+  background: linear-gradient(aqua, white);
+}*/
+
+body.cover_image {
+  background-color: #2c3333;
+  background-image: url(beach.JPG);
+  max-width: 100%;
+  /*position: absolute;
+  top: 20px;*/
+
+  /*background-image: url(beach.JPG), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7eadb3), to(white));
+  background-image: url(beach.JPG), -webkit-linear-gradient(bottom, #7eadb3, white);
+  background-image: url(beach.JPG), -moz-linear-gradient(bottom, #7eadb3, white);
+  background-image: url(beach.JPG), -ms-linear-gradient(bottom, #7eadb3, white);
+  background-image: url(beach.JPG), -o-linear-gradient(bottom, #7eadb3, white);
+  background-image: url(beach.JPG), linear-gradient(bottom, #7eadb3, white);*/
+
+  /*background-image: url(beach.JPG), -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#7eadb3));
+  background-image: url(beach.JPG), -webkit-linear-gradient(right,  white, #7eadb3);
+  background-image: url(beach.JPG), -moz-linear-gradient(right,  white, #7eadb3);
+  background-image: url(beach.JPG), -ms-linear-gradient(right,  white,  #7eadb3);
+  background-image: url(beach.JPG), -o-linear-gradient(right,  white,  #7eadb3);
+  background-image: url(beach.JPG), linear-gradient(right,  white,  #7eadb3);*/
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*height: 100%;*/
+}
+
+nav {
+  /*vertical-align: top;*/
+  display: inline-block;
+/*  position: absolute;*/
+  width: 75%;
+  clear: left;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 115px;
+  top: -40px;
+  float: left;
+  clear: right;
+ /* display: inline-block;*/
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  float: right;
+}
+
+nav a {
+    display: block;
+    width: 60px;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+nav a:link, a:visited {
+    display: block;
+    width: 120px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover, a:active {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  background: linear-gradient(white, #7eadb3);
+  width: 100%;
+}*/
+
+h1 {
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: white;
+}
+
+.index {
+  position: relative;
+  top: 275px;
+  text-align: center;
+  margin: 0 0 auto;
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: white;
+}
+
+.index h1 {
+  font-size: 300%;
+}
+
+.index h3 {
+  font-size: 150%;
+}
+
+/*  MAIN CONTAINER
+  Set the width to whatever you want the width of your site to be. */
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  /*background: white;*/
+}
+
+/*  SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  DEFAULT ROW STYLES
+  Set bottom padding according to preference */
+.row { padding-bottom: 0em;
+}
+
+
+/* DEFAULT COLUMN STYLES */
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@media ( min-width : 768px ) {
+
+  .gutters .col {
+    margin-left: 2%;
+  }
+
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+}
+
+/*  COLUMN WIDTH ON DISPLAYS +768px
+  You might need to play with media queries here to suit your design. */
+@media ( min-width : 768px ) {
+  .span_1 { width: 8.33333333333%; }
+  .span_2 { width: 16.6666666667%; }
+  .span_3 { width: 25%; }
+  .span_4 { width: 33.3333333333%; }
+  .span_5 { width: 41.6666666667%; }
+  .span_6 { width: 50%; }
+  .span_7 { width: 58.3333333333%; }
+  .span_8 { width: 66.6666666667%; }
+  .span_9 { width: 75%; }
+  .span_10 { width: 83.3333333333%; }
+  .span_11 { width: 91.6666666667%; }
+  .span_12 { width: 100%; }
+
+  .gutters .span_1 { width: 6.5%; }
+  .gutters .span_2 { width: 15.0%; }
+  .gutters .span_3 { width: 23.5%; }
+  .gutters .span_4 { width: 32.0%; }
+  .gutters .span_5 { width: 40.5%; }
+  .gutters .span_6 { width: 49.0%; }
+  .gutters .span_7 { width: 57.5%; }
+  .gutters .span_8 { width: 66.0%; }
+  .gutters .span_9 { width: 74.5%; }
+  .gutters .span_10 { width: 83.0%; }
+  .gutters .span_11 { width: 91.5%; }
+  .gutters .span_12 { width: 100%; }
+}
+
+
+
+
+
+
+
+
+
