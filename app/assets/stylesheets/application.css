@@ -22,10 +22,9 @@ html {
 }
 
 body {
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
   background-color: #2c3333;
-  /*max-height: 1400px;
-  max-width: 960px;*/
 }
 
 body.coverimage {
@@ -66,8 +65,8 @@ nav {
 }
 
 .logo img {
-  width: 125px;
-  height: 125px;
+  width: 50%;
+  height: 50%;
   position: relative;
   left: 115px;
   top: 25px;
