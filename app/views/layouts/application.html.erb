@@ -10,9 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 </head>
 <body class="<%= @coverimage_class ? 'coverimage' : ''%> debug"
-  <div class="logo debug">
-    <img src="assets/mer-logo.png">
-  </div>
+  <!-- # -->
   <nav class="debug">
     <ul>
       <li><a href='/welcome/contact'>Contact</a></li>
@@ -23,10 +21,12 @@
 
     </ul>
   </nav>
+  <%= link_to "sign up now", '#', class: "btn btn-lg btn-primary" %>
 
   <div class="content debug">
 
             <%= yield %>
+
   </div>
 
   <div class="footer">

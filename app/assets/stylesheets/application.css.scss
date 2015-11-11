@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 /*  12 COLUMN : RESPONSIVE GRID SYSTEM
   DEVELOPER : DENIS LEBLANC
   URL : http://responsive.gs
@@ -23,6 +26,7 @@ html {
 
 body {
   width: 90%;
+  /*max-width: 960px;*/
   margin: 0 auto;
   background-color: #2c3333;
 }
@@ -31,9 +35,15 @@ body.coverimage {
   background-image: url(beach.JPG);
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 300px;
+  /*background-size: 100%;*/
+  /*position: fixed;*/
+  /*width: 100%;
+  height: 100%;*/
+  /*margin: 200px auto;*/
 
-  /*background-size: cover;*/
-  /*max-width: 100%;*/
+
+
 
   /*position: absolute;
   top: 20px;*/
@@ -51,17 +61,15 @@ body.coverimage {
   background-image: url(beach.JPG), -ms-linear-gradient(right,  white,  #7eadb3);
   background-image: url(beach.JPG), -o-linear-gradient(right,  white,  #7eadb3);
   background-image: url(beach.JPG), linear-gradient(right,  white,  #7eadb3);*/
-
-
-  /*height: 100%;*/
 }
 
 nav {
-  vertical-align: top;
+  /*vertical-align: top;*/
   display: inline-block;
 /*  position: absolute;*/
-  width: 75%;
-  clear: left;
+  width: 100%;
+  margin: 15px 0 0 0;
+  /*clear: left;*/
 }
 
 .logo img {
@@ -86,31 +94,30 @@ nav li {
   float: right;
 }
 
-nav a {
-    display: block;
-    width: 60px;
-    font-family: 'Quicksand', Arial, sans-serif;
-}
-
-nav a:link, a:visited {
+nav ul li a {
     display: block;
     width: 120px;
+    font-family: 'Quicksand', Arial, sans-serif;
     color: #FFFFFF;
     text-align: center;
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+nav ul li a:visited {
 
 }
 
-nav a:hover, a:active {
+nav a:hover, a:focus, a:active {
     font-weight: bold;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 4px 4px 4px #000000;
 }
+
 
 .content {
-  margin: 10px auto;
   width: 70%;
+  margin: 10px auto;
 }
 
 /*.footer {
