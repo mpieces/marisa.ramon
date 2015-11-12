@@ -4,10 +4,12 @@ class WelcomeController < ApplicationController
   # end
 
   def home
-     @coverimage_class = true
+     @jumbotron_class = true
+     @bg_class = false
   end
 
   def portfolio
+    @bg_class = true
   end
 
   def about

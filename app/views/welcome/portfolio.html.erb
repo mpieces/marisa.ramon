@@ -1,50 +1,59 @@
 <% provide(:title, "Portfolio") %>
 
-<div class="container">
-  <div id="portfolio">
-    <div class="row debug">
-        <h1>Portfolio</h1>
-    </div>
-    <div class="row debug">
-      <div class="col span_6 debug">
-        <img src="estates.png" class="estates-img">
+<div class="page-header debug">
+  <h1>Some of my projects.... <small>     </small></h1>
+</div>
+
+<div class="portfolio debug">
+<div class="row debug">
+  <div class="col-md-3 col-md-offset-2 debug">
+    <div class="thumbnail debug">
+      <%= image_tag("estates.png", alt: "estates", :class => "preview") %>
+      <div class="caption">
         <h3>Estates-to-Date</h3>
-
-          <form action="www.estates-to-date.herokuapp.com" method="get">
-            <button>Visit Site</button>
-          </form>
-
-        <p>Technology used:</p>
-        <p>       </p>
-      </div>
-      <div class="col span_6 debug">
-        <h3>Chariteer</h3>
-          <form action="http:://www.google.com">
-            <button>Visit Site</button>
-          </form>
-        <p>Technology used:</p>
-        <p>       </p>
+        <p>Technology Used: </p>
+        <p><a href="http://estates-to-date.herokuapp.com" class="btn btn-default" role="button">Visit Site</a></p>
       </div>
     </div>
-    <div class="row debug">
-      <div class="col span_6 debug">
-        <h3>Marisa's Pieces</h3>
-          <form action="http:://www.google.com">
-            <button>Visit Site</button>
-          </form>
-        <p>Technology used:</p>
-        <p>       </p>
-      </div>
-      <div class="col span_6 debug">
-        <h3>Connect Four</h3>
-          <form action="http:://www.google.com">
-            <button>Visit Site</button>
-          </form>
-        <p>Technology used:</p>
-        <p>       </p>
+  </div>
+
+  <!-- <div class="col-sm-6 col-md-2 debug">
+  </div> -->
+
+  <div class="col-md-3 col-md-offset-2 debug">
+    <div class="thumbnail debug">
+      <%= image_tag("chariteer.png", alt: "chariteer", :class => "preview") %>
+        <div class="caption">
+          <h3>Chariteer</h3>
+          <p>Technology Used: </p>
+          <p><a href="#" class="btn btn-default" role="button">Visit Site</a></p>
       </div>
     </div>
   </div>
 </div>
 
+<div class="row debug">
+  <div class="col-md-3 col-md-offset-2 debug">
+    <div class="thumbnail debug">
+      <%= image_tag("backbone.png", alt: "backbone.js", :class => "preview") %>
+      <div class="caption">
+        <h3>Marisa's Pieces</h3>
+        <p>Technology Used: </p>
+        <p><a href="#" class="btn btn-default" role="button">Visit Site</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-md-offset-2 debug">
+    <div class="thumbnail debug">
+      <%= image_tag("connect4.png", alt: "connect4", :class => "preview") %>
+      <div class="caption">
+        <h3>Connect Four</h3>
+        <p>Technology Used: </p>
+        <p><a href="#" class="btn btn-default" role="button">Visit Site</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 

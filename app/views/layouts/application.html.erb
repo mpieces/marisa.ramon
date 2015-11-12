@@ -2,28 +2,43 @@
 <html>
 <head>
   <title><%= yield(:title) %> | Marisa E. Ramon</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="application.css.scss" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
 </head>
-<body class="<%= @coverimage_class ? 'coverimage' : ''%> debug"
-  <!-- # -->
-  <nav class="debug">
-    <ul>
-      <li><a href='/welcome/contact'>Contact</a></li>
-      <li><a href='/welcome/resume'>Resume</a></li>
-      <li><a href='/welcome/about'>About</a></li>
-      <li><a href='/welcome/portfolio'>Portfolio</a></li>
-      <li><a href='/'>Home</a></li>
 
-    </ul>
-  </nav>
-  <%= link_to "sign up now", '#', class: "btn btn-lg btn-primary" %>
+<!-- <div class="container-fluid"> -->
+<body id="bootstrap-overrides" class="debug <%= @jumbotron_class ? 'jumbotron' : ''%> <%= @bg_class ? 'bg' : ''%>
 
-  <div class="content debug">
+  <div class="row debug">
+    <div class="col-md-12 debug">
+      <nav class="debug">
+        <ul>
+          <li><a style="color:#2c3333;" href='/welcome/contact'>Contact</a></li>
+          <li><a style="color:#2c3333;" href='/welcome/resume'>Resume</a></li>
+          <li><a style="color:#2c3333;" href='/welcome/about'>About</a></li>
+          <li><a style="color:#2c3333;" href='/welcome/portfolio'>Portfolio</a></li>
+          <li><a style="color:#2c3333;" href='/'>Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row debug">
+    <div class="col-md-4 debug"> -->
+      <%= image_tag("mer-logo.png", alt: "MER logo", :class => "style_logo") %>
+   <!--  <div class="col-med-offset-8 debug">
+    </div> -->
+  <!-- </div> -->
+
+
+  <div class="container-fluid debug">
 
             <%= yield %>
 
@@ -32,5 +47,6 @@
   <div class="footer">
   </div>
 </body>
+<!-- </div> -->
 
 </html>
