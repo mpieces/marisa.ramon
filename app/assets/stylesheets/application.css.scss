@@ -11,7 +11,7 @@ body {
   padding-top: 60px;
   background-color: #2c3333;
   margin: 0 auto;
-  width: 90%;
+ /* width: 90%;*/
 }
 
 /*FROM TUTORIAL:*/
@@ -108,24 +108,30 @@ nav a:hover, a:focus, a:active {
 /*HOME PAGE */
 .home {
   position: relative;
-  top: 120px;
+  top: 100px;
   text-align: center;
   margin: 0 0 auto;
-  font-family: 'Quicksand', Arial, sans-serif;
-  color: #FFFFF;
+  /*font-family: 'Quicksand', Arial, sans-serif;
+  color: #FFFFF;*/
 }
 
-.home h1 {
+/*.home-heading h1 {
+  line-height: 0.2em;
+}*/
+
+/*.home h1 {
   font-family: 'Quicksand', Arial, sans-serif;
   color: #2c3333;
   font-size: 300%;
-}
+}*/
 
-.home h3 {
+/*.home h3 {
   font-family: 'Allura', cursive;
   color: #2c3333;
   font-size: 200%;
-}
+}*/
+
+/*MAIN YIELD CONTAINER:*/
 
 .container-fluid {
   margin-top: 60px;
@@ -139,13 +145,22 @@ h1 {
 }
 
 li {
-  font-size: 14px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 70px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  line-height: 1em;
 }
 
 .page-header h1 small {
   color: white;
   font-size: 24px;
   font-family: "adobe-garamond-pro";
+  /*line-height: 0.5em;*/
  /* font-family: 'Allura', cursive;*/
 }
 
@@ -175,4 +190,36 @@ li {
 
 .about-heading {
   z-index: 10;
+}
+
+.about ul,li,h1,p {
+  color: white;
+}
+
+.about p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.about ul li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+}
+
+/*CONTACT PAGE:*/
+
+.self {
+  height: 50%;
+  width: 50%;
+}
+
+.contact {
+  text-align: left;
+}
+
+.media {
+  margin: 20px;
 }

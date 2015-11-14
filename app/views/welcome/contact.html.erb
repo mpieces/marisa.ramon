@@ -1,10 +1,34 @@
 <% provide(:title, "Contact") %>
 
-<h1>Contact</h1>
-<p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="http://www.railstutorial.org/#help">Rails Tutorial help section</a>.
-  To get help on this sample app, see the
-  <a href="http://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
-  book</a>.
-</p>
+<div class="page-header debug">
+  <h1><small><i>Send a friendly</i></small></h1>
+  <h1>HELLO</h1>
+</div>
+
+
+  <div class="row debug">
+    <div class="col-md-4 debug">
+      <%= image_tag("DBC Photo.JPG", alt: "self photo", :class => "self") %>
+    </div>
+    <div class="col-md-4 contact debug">
+      <h1>Contact Information</h1>
+      <hr />
+      <p>Marisa E. Ramon</p>
+      <p>Dallas, TX</p>
+      <p><span class="glyphicon glyphicon-earphone"></span>     214.206.6892</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>     mer0522@gmail.com</p>
+    </div>
+    <div class="col-md-4 contact debug">
+      <h1>Social Stuff...</h1>
+      <hr />
+      <div class="row debug">
+        <a href="http://github.com/mpieces"><%= image_tag("GH-64", alt: "GH", :class => "media") %></a>
+      </div>
+      <div class="row debug">
+        <a href="https://www.facebook.com/marisa.ramon.56"><%= image_tag("FB-58", alt: "FB", :class => "media") %></a>
+      </div>
+      <div class="row debug">
+      <a href="http://www.linkedin.com/in/marisaramon"><%= image_tag("LI-66.png", alt: "LI", :class => "media") %></a>
+      </div>
+    </div>
+
