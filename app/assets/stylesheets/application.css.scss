@@ -132,10 +132,47 @@ nav a:hover, a:focus, a:active {
   text-align: center;
 }
 
-.page-header h1 {
+/*ALL OTHER PAGES:*/
+
+h1 {
   color: white;
 }
 
+li {
+  font-size: 14px;
+}
+
+.page-header h1 small {
+  color: white;
+  font-size: 24px;
+  font-family: "adobe-garamond-pro";
+ /* font-family: 'Allura', cursive;*/
+}
+
+/**need to fix this*/
 .bg {
   background-color: white;
+}
+
+/*RESUME PAGE: */
+
+/*image:*/
+.screen {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.resume-heading {
+  position: relative;
+  top: -400px;
+  z-index: 10;
+}
+
+/*ABOUT PAGE:*/
+
+.about-heading {
+  z-index: 10;
 }

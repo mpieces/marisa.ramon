@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+  <!-- head tag not necessary -->
+  <meta charset="UTF-8">
   <title><%= yield(:title) %> | Marisa E. Ramon</title>
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="application.css.scss" rel="stylesheet">
@@ -13,8 +15,9 @@
   <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
 </head>
 
-<!-- <div class="container-fluid"> -->
-<body id="bootstrap-overrides" class="debug <%= @jumbotron_class ? 'jumbotron' : ''%> <%= @bg_class ? 'bg' : ''%>
+
+<body id="bootstrap-overrides" class="debug <%= @jumbotron_class ? 'jumbotron' : ''%>
+  <%= @bg_class ? 'bg' : ''%>"
 
   <div class="row debug">
     <div class="col-md-12 debug">
@@ -44,8 +47,9 @@
 
   </div>
 
-  <div class="footer">
-  </div>
+  <!-- <div class="footer">
+  </div> -->
+
 </body>
 <!-- </div> -->
 
