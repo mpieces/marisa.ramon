@@ -8,51 +8,29 @@
 }
 
 body {
-  padding-top: 60px;
+  /*padding-top: 60px;*/ /** NEED THIS?*/
   background-color: #2c3333;
   margin: 0 auto;
  /* width: 90%;*/
 }
 
-/*FROM TUTORIAL:*/
-/*
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
-}*/
-
-/*Added:*/
-
 body.jumbotron {
   background-image: url(beach.JPG);
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
-  padding-top: 400px;
-  /*margin-top: 300px;*/
+  background-repeat: no-repeat;
 }
 
-#bootstrap-overrides {
+/*#bootstrap-overrides {
   background-color: #2c3333;
-}
+}*/
 
 nav {
-  vertical-align: top;
+  /*vertical-align: top;*/
   display: inline-block;
-  position: fixed;
-  width: 80%;
-  top: 15px;
-  margin: 15px 0 0 0;
+  position: relative;
+  width: 100%;
+  top: 30px;
   /*clear: left;*/
 }
 
@@ -63,22 +41,18 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  /*display: inline;*/
   float: right;
 }
 
-/*#bootstrap-overrides > a {
-  color: #FFFFF;
-}*/
-
 nav ul li a {
     display: block;
-    width: 100px;
+    /*word-spacing: 200em;*/
     font-family: 'Quicksand', Arial, sans-serif;
     color: white !important;
     font-weight: bold;
     text-align: center;
-    padding: 4px;
+    padding: 20px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -89,7 +63,7 @@ nav ul li a:visited {
 
 nav a:hover, a:focus, a:active {
     font-weight: bold;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 2px aqua;
     text-decoration: none;
 }
 /*
@@ -171,7 +145,7 @@ li {
 
 /*RESUME PAGE: */
 
-/*image:*/
+/*computer image:*/
 .screen {
   position: relative;
   width: 75%;
@@ -214,12 +188,28 @@ li {
 .self {
   height: 50%;
   width: 50%;
+  margin: 0 auto;
 }
 
-.contact {
+.contact p {
   text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 
 .media {
   margin: 20px;
+}
+
+.bg-image {
+  z-index: -1;
+
+
+
+}
+
+.contact-heading {
+  z-index: 10;
+  position: relative;
+  top: -550px;
 }
