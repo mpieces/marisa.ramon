@@ -5,17 +5,15 @@ class WelcomeController < ApplicationController
 
   def home
      @jumbotron_class = true
-     @bg_class = false
+     # @bg_class = false
   end
 
   def portfolio
-    @bg_class = true
-
+    # @bg_class = true
   end
 
   def about
   end
-
 
   # def create
   #   @resume = Resume.create(resume_params)
@@ -32,5 +30,4 @@ class WelcomeController < ApplicationController
   # def resume_params
   #   params.require(:image).permit(:title, :body)
   # end
-
 end
