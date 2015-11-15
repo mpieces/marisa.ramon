@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
   # end
 
   def home
-     @jumbotron_class = true
+     @beach_class = true
      # @bg_class = false
   end
 
