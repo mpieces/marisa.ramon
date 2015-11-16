@@ -20,10 +20,12 @@ class WelcomeController < ApplicationController
   # end
 
   def resume
+    @screen_class = true
     # render file: "/marisa_ramon_resume.docx"
   end
 
   def contact
+    @dallas_class = true
   end
 
   # private
