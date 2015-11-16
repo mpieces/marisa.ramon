@@ -40,6 +40,13 @@ body.screen-image {
   /*background-position: center top;*/
 }
 
+body.projects-image {
+  background-image: url(projects.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 /*#bootstrap-overrides {
   background-color: #2c3333;
 }*/

@@ -5,11 +5,10 @@ class WelcomeController < ApplicationController
 
   def home
      @beach_class = true
-     # @bg_class = false
   end
 
   def portfolio
-    # @bg_class = true
+    @project_class = true
   end
 
   def about
