@@ -3,15 +3,28 @@
 
 /* universal */
 
+/* Remove default margin and padding from every element */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Includes padding, margins with width and height of elements */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .debug {
   border: 1px solid red;
 }
 
 body {
-  /*padding-top: 60px;*/ /** NEED THIS?*/
   background-color: #2c3333;
-  margin: 0 auto;
- /* width: 90%;*/
+  margin: 0;
+  padding: 0;
 }
 
 body.beach {
@@ -19,6 +32,10 @@ body.beach {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 body.dallas-image {
@@ -116,37 +133,12 @@ nav a:hover, a:focus, a:active {
   z-index: 10;
 }
 
-/*HOME PAGE */
-.home {
-  position: relative;
-  top: 100px;
-  text-align: center;
-  margin: 0 0 auto;
-  /*font-family: 'Quicksand', Arial, sans-serif;
-  color: #FFFFF;*/
-}
-
-/*.home-heading h1 {
-  line-height: 0.2em;
-}*/
-
-/*.home h1 {
-  font-family: 'Quicksand', Arial, sans-serif;
-  color: #2c3333;
-  font-size: 300%;
-}*/
-
-/*.home h3 {
-  font-family: 'Allura', cursive;
-  color: #2c3333;
-  font-size: 200%;
-}*/
-
 /*MAIN YIELD CONTAINER:*/
 
 .container {
   margin-top: 60px;
   text-align: center;
+  position: relative;
 }
 
 /*ALL OTHER PAGES:*/
@@ -174,6 +166,33 @@ li {
   /*line-height: 0.5em;*/
  /* font-family: 'Allura', cursive;*/
 }
+
+/*HOME PAGE */
+.home {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  margin: 0 0 auto;
+  /*font-family: 'Quicksand', Arial, sans-serif;
+  color: #FFFFF;*/
+}
+
+/*.home-heading h1 {
+  line-height: 0.2em;
+}*/
+
+/*.home h1 {
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: #2c3333;
+  font-size: 300%;
+}*/
+
+/*.home h3 {
+  font-family: 'Allura', cursive;
+  color: #2c3333;
+  font-size: 200%;
+}*/
+
 
 
 /*RESUME PAGE: */
