@@ -6,6 +6,7 @@
     <!-- Sets the page to the width of the device and sets the zoom level -->
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title><%= yield(:title) %> | Marisa E. Ramon</title>
+
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="application.css.scss" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -38,12 +39,7 @@
     </div>
   </div>
 
-
-
       <%= image_tag("mer-logo.png", alt: "MER logo", :class => "logo") %>
-
-
-
 
     <div class="container debug">
 
@@ -54,6 +50,8 @@
   <!-- <div class="footer">
   </div> -->
 
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   </body>
 
 </html>
