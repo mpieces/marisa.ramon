@@ -158,8 +158,6 @@ li {
 }
 
 .glyphicon {
-  height: 150%;
-  width: 150%;
   color: white;
 }
 
@@ -187,8 +185,9 @@ li {
   top: 400px;
 }
 
-h3 {
+.portfolio h3 {
   color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; ;
 }
 
 /*RESUME PAGE: ****************************************************** */
@@ -235,7 +234,7 @@ h3 {
 
 .contact-content {
   position: relative;
-  top: 100px;
+  top: 250px;
 }
 
 .self-photo {
