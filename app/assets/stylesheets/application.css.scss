@@ -1,7 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* universal */
 
 /* Remove default margin and padding from every element */
 * {
@@ -16,9 +15,9 @@
   box-sizing: border-box;
 }
 
-.debug {
+/*.debug {
   border: 1px solid red;
-}
+}*/
 
 body {
   background-color: #2c3333;
@@ -56,7 +55,13 @@ body.projects-image {
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
+}
 
+body.lox-image {
+  background-image: url(lox-2.jpg);
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 nav {
@@ -86,7 +91,7 @@ nav ul li a {
     /*word-spacing: 200em;*/
     font-family: 'Quicksand', Arial, sans-serif;
     color: white !important;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     padding: 20px;
     text-decoration: none;
@@ -99,7 +104,7 @@ nav ul li a:visited {
 }
 
 nav a:hover, a:focus, a:active {
-    font-weight: bold;
+    font-weight: bolder;
     text-shadow: 2px 2px 2px aqua;
     /*#54a6aa cadet blue- same as logo*/
     text-decoration: none;
@@ -110,8 +115,8 @@ nav a:hover, a:focus, a:active {
   height: 150px;
   width: 150px;
   position: relative;
-  top: 20px;
-  left: 200px;
+  top: 15px;
+  left: 100px;
   z-index: 10;
 }
 
@@ -138,15 +143,16 @@ li {
   text-align: left;
 }
 
-/*.page-header {
-  position: absolute;
-}*/
+.page-header {
+  border: none;
+}
 
 .page-header h1 {
+  font-weight: bolder;
   color: white;
   font-size: 70px;
   font-family: 'Quicksand', Arial, sans-serif;
-  line-height: 1em;
+  line-height: 0.5em;
 }
 
 .page-header h1 small {
@@ -159,6 +165,7 @@ li {
 
 .glyphicon {
   color: white;
+  /*MAKE BIGGER*/
 }
 
 /*HOME PAGE */
@@ -190,6 +197,10 @@ li {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; ;
 }
 
+.portfolio li {
+  font-size: 14px;
+}
+
 /*RESUME PAGE: ****************************************************** */
 
 .resume-heading {
@@ -200,30 +211,38 @@ li {
 }
 
 
-/*ABOUT PAGE:*/
+/*ABOUT PAGE: *********************************/
 
 .about-heading {
+  position: relative;
+  top: -150px;
   z-index: 10;
 }
 
-.about ul,li,h1,p {
+.about {
+  position: relative;
+  top: 400px;
+}
+
+.about ul,li,h3,p {
   color: white;
 }
 
 .about p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 
 .about ul li {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   font-weight: normal;
+  line-height: 1.42857143;
 }
 
-/*CONTACT PAGE:*/
+/*CONTACT PAGE:********************************/
 
 /*initial text:*/
 .contact-heading {
@@ -254,8 +273,6 @@ li {
   /*text-align: left;*/
 }
 
-/*.dallas-image {
-  z-index: -1;
-}*/
+
 
 
