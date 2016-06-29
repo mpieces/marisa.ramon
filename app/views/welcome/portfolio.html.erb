@@ -1,12 +1,14 @@
 <% provide(:title, "Portfolio") %>
 
 <div class="page-header debug">
-  <h1 class="port-heading"><small><i>Take a moment to view some</i></small><h1>
-  <h1 class="port-heading">PROJECTS</h1>
-  <br>
-  <span class="glyphicon glyphicon-chevron-down chevron"</span>
+  <div class="port-heading">
+    <h1><small><i>Take a moment to view some</i></small><h1>
+    <h1>PROJECTS</h1>
+    <br>
+    <a href="#scroll"><%= image_tag("chevron.png", :class => "chevron") %></a>
+  </div>
 </div>
-
+<a name="scroll">
 <div class="portfolio debug">
   <div class="row debug">
     <div class="col-md-7 debug">

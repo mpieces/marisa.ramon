@@ -36,28 +36,28 @@ body.beach {
 }
 
 body.dallas-image {
-  background-image: image-url('dallas-2.jpg');
+  background-image: image-url('dallas.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
 body.screen-image {
-  background-image: image-url('screen-3.jpeg');
+  background-image: image-url('screen.jpeg');
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
 body.projects-image {
-  background-image: image-url('projects-2.jpg');
+  background-image: image-url('projects.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
 body.lox-image {
-  background-image: image-url('lox-2.jpg');
+  background-image: image-url('lox.jpg');
   background-size: 100% 75%;
   background-repeat: no-repeat;
   z-index: -1;
@@ -162,9 +162,9 @@ li {
  /* font-family: 'Allura', cursive;*/
 }
 
-.glyphicon {
-  color: white;
-  /*MAKE BIGGER*/
+.chevron {
+  width: 83px;
+  height: 45px;
 }
 
 /*HOME PAGE */
@@ -198,6 +198,10 @@ li {
 
 .portfolio li {
   font-size: 14px;
+}
+
+.port-heading {
+  padding-top: 50px;
 }
 
 /*RESUME PAGE: ****************************************************** */
