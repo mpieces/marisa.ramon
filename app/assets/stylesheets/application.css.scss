@@ -35,8 +35,15 @@ body.beach {
   -o-background-size: cover;
 }
 
-body.dallas-image {
-  background-image: image-url('dallas.jpg');
+// body.dallas-image {
+//   background-image: image-url('dallas.jpg');
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+//   z-index: -1;
+// }
+
+body.seattle-image {
+  background-image: image-url('seattle.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
@@ -128,7 +135,6 @@ nav a:hover, a:focus, a:active {
   text-align: center;
   position: relative;
 }
-
 
 
 /*ALL OTHER PAGES:*/
@@ -256,13 +262,14 @@ li {
 
 .contact-content {
   position: relative;
-  top: 250px;
+  top: 300px;
 }
 
 .self-photo {
   height: 50%;
   width: 50%;
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .contact p {
@@ -276,6 +283,17 @@ li {
   /*text-align: left;*/
 }
 
+.contact a {
+  color: white;
+  text-decoration: none;
+}
 
+.contact a:hover {
+  text-shadow: 2px 2px 2px aqua;
+}
+
+.social-media {
+  float: right;
+}
 
 
