@@ -35,19 +35,19 @@ body.beach {
   -o-background-size: cover;
 }
 
-// body.dallas-image {
-//   background-image: image-url('dallas.jpg');
-//   background-size: 100%;
-//   background-repeat: no-repeat;
-//   z-index: -1;
-// }
-
-body.seattle-image {
-  background-image: image-url('seattle.jpg');
+body.dallas-image {
+  background-image: image-url('dallas.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
 }
+
+// body.seattle-image {
+//   background-image: image-url('seattle.jpg');
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+//   z-index: -1;
+// }
 
 body.screen-image {
   background-image: image-url('screen.jpeg');

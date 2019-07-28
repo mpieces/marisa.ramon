@@ -20,8 +20,8 @@ class WelcomeController < ApplicationController
   end
 
   def contact
-    # @dallas_class = true
-    @seattle_class = true
+    @dallas_class = true
+    # @seattle_class = true
   end
 
 end
