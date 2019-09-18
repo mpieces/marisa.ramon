@@ -266,10 +266,11 @@ li {
 }
 
 .self-photo {
-  height: 50%;
-  width: 50%;
+  height: 75%;
+  width: 75%;
   margin: 0 auto;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contact p {
@@ -280,7 +281,6 @@ li {
 
 .media {
   margin: 20px;
-  /*text-align: left;*/
 }
 
 .contact a {
@@ -293,7 +293,7 @@ li {
 }
 
 .social-media {
-  float: right;
+  margin-top: 50px;
 }
 
 
