@@ -1,5 +1,5 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
 /* Remove default margin and padding from every element */
 * {
@@ -93,28 +93,29 @@ nav li {
 }
 
 nav ul li a {
-    display: block;
-    /*word-spacing: 200em;*/
-    font-family: 'Quicksand', Arial, sans-serif;
-    color: white !important;
-    font-weight: bolder;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    z-index: 10;
+  display: block;
+  /*word-spacing: 200em;*/
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: white !important;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 10;
 }
 
 nav ul li a:visited {
-
 }
 
-nav a:hover, a:focus, a:active {
-    font-weight: bolder;
-    text-shadow: 2px 2px 2px aqua;
-    /*#54a6aa cadet blue- same as logo*/
-    text-decoration: none;
-    z-index: 10;
+nav a:hover,
+a:focus,
+a:active {
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px aqua;
+  /*#54a6aa cadet blue- same as logo*/
+  text-decoration: none;
+  z-index: 10;
 }
 
 .logo {
@@ -126,8 +127,6 @@ nav a:hover, a:focus, a:active {
   z-index: 10;
 }
 
-
-
 /*MAIN YIELD CONTAINER:*/
 
 .container {
@@ -135,7 +134,6 @@ nav a:hover, a:focus, a:active {
   text-align: center;
   position: relative;
 }
-
 
 /*ALL OTHER PAGES:*/
 
@@ -163,9 +161,9 @@ li {
 .page-header h1 small {
   color: white;
   font-size: 24px;
-  font-family: "adobe-garamond-pro";
+  font-family: 'adobe-garamond-pro';
   /*line-height: 0.5em;*/
- /* font-family: 'Allura', cursive;*/
+  /* font-family: 'Allura', cursive;*/
 }
 
 .chevron {
@@ -194,12 +192,12 @@ li {
 
 .portfolio {
   position: relative;
-  top: 500px;
+  top: 700px;
 }
 
 .portfolio h3 {
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; ;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .portfolio li {
@@ -219,7 +217,6 @@ li {
   opacity: 10;
 }
 
-
 /*ABOUT PAGE: *********************************/
 
 .about-heading {
@@ -233,18 +230,21 @@ li {
   top: 400px;
 }
 
-.about ul,li,h3,p {
+.about ul,
+li,
+h3,
+p {
   color: white;
 }
 
 .about p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   text-align: left;
 }
 
 .about ul li {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   text-align: left;
   font-weight: normal;
@@ -275,7 +275,7 @@ li {
 
 .contact p {
   text-align: left;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 
@@ -295,5 +295,3 @@ li {
 .social-media {
   margin-top: 50px;
 }
-
-
